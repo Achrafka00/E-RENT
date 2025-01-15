@@ -1,0 +1,66 @@
+/* Ensure the section takes full width */
+.services {
+    width: 100%;
+    margin: 0; /* Remove margin to avoid unwanted space */
+    padding: 0; /* Remove padding if you want a full-width effect */
+    display: flex;
+    justify-content: center; /* Center the content */
+    align-items: center; /* Vertically center the content */
+    position: relative;
+  }
+  
+  /* Ensure the container inside also takes full width */
+  .services .featured.container {
+    width: 100%;
+    max-width: 100%; /* Remove the max-width limitation */
+    padding: 0; /* Remove padding */
+  }
+  
+  /* Adjust the background to cover the entire section */
+  .services .back {
+    width: 100%;
+    height: 100vh; /* Take full viewport height */
+    background-size: cover; /* Ensure the image covers the section */
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  
+  /* Adjust title and subtitle to stay within the content */
+  .services .back h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+  .services .back p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  /* Optional: Adjust FeaturedCard layout */
+  .featured .content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Flexible layout */
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .services .back h1 {
+      font-size: 2.5rem; /* Adjust font size for smaller screens */
+    }
+  
+    .services .back p {
+      font-size: 1rem; /* Adjust subtitle size for smaller screens */
+    }
+  
+    /* Adjust grid layout for smaller screens */
+    .featured .content {
+      grid-template-columns: 1fr; /* Stack items vertically on small screens */
+    }
+  }
+  

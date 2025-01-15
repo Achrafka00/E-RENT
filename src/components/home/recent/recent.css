@@ -1,21 +1,66 @@
 .recent .text {
   padding: 30px;
+  border-radius: 8px; /* Soft border rounding */
 }
+
 .recent .category span {
-  padding: 4px 15px;
-  border-radius: 2px;
+  padding: 6px 20px;
+  border-radius: 20px; /* Fully rounded badge */
   font-weight: 600;
   font-size: 13px;
   display: inline-block;
+  color: #ffffff;
+  background: linear-gradient(to right, #4facfe, #00f2fe); /* Gradient for category badge */
 }
+
 .recent .category i {
   font-size: 20px;
-  color: #bec7d8;
+  color: #bec7d8; /* Default color */
+  transition: color 0.3s ease; /* Smooth transition */
 }
+
+.recent .category i:hover {
+  color: gold; /* Hover effect for visual feedback */
+}
+
+.recent h4 {
+  color: #025373; /* Deep blue for headings */
+  font-weight: bold;
+  margin: 10px 0;
+}
+
 .recent p {
-  color: #72809d;
+  color: #6c92b0; /* Subtle gray-blue for text */
+  font-size: 14px;
+  margin-bottom: 10px;
 }
+
 .recent .button {
-  border-top: 1px solid #e4e8f3;
+  border-top: 1px solid #d4ecf7; /* Light blue border */
   padding: 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.recent .button .btn2 {
+  padding: 8px 15px;
+  background: linear-gradient(to right, #6aaefe, #3e8ef7); /* Button gradient */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+.recent .button .btn2:hover {
+  background: linear-gradient(to right, #3e8ef7, #6aaefe); /* Reverse gradient on hover */
+  box-shadow: 0 4px 8px rgba(62, 142, 247, 0.4); /* Glow effect */
+}
+
+.recent .button span {
+  color: #4facfe; /* Blue text for type */
+  font-size: 14px;
+  font-weight: 500;
 }

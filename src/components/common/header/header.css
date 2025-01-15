@@ -1,67 +1,174 @@
+/* LOGO */
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Style for the logo link */
+.logo-link {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+/* Style for the logo icon */
+.logo-icon {
+  font-size: 36px;
+  color: #108be7;  /* Change the color of the icon */
+  margin-right: 8px;
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect for the icon */
+.logo-link:hover .logo-icon {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+/* Style for the logo text */
+.logo-text {
+  font-size: 24px;
+  background-color: #ffdf40;
+  font-weight: 600;
+  color: #333;  /* Dark gray for text */
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect for the logo text */
+.logo-link:hover .logo-text {
+  color: #108be7; /* Change text color on hover */
+}
+/* LOGO END */
+
 header {
-  background-color: #fff;
+  color: #000000;
+  background-color: #ffffff;
   height: 10vh;
-  box-shadow: 0 5px 30px rgb(0 22 84 / 10%);
-  padding: 15px 0;
-  position: sticky;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  position:sticky;
   top: 0;
   z-index: 99999;
+  transition: all 0.3s ease-in-out;
 }
+
 header img {
   width: 170px;
 }
+
 header a {
   margin-left: 30px;
-  transition: 0.5s;
+  transition: 0.3s;
   font-weight: 500;
+  color: #ffffff;
 }
+
 header a:hover {
-  color: #27ae60;
+  color: #ffdf40;
+  transform: scale(1.1);
 }
+
 header span {
-  width: auto;
   padding: 0px 6px;
-  background: #27ae60;
-  border-radius: 50px;
+  background: #ffdf40;
+  border-radius: 50%;
   color: #ffffff;
   margin-right: 4px;
-  font-weight: 400;
+  font-weight: 600;
 }
+
 header h4 {
   font-weight: 500;
   margin-right: 20px;
+  color: #ffffff;
 }
-header .toggle {
+
+header .btn1 {
+  font-size: 17px;
+  padding: 10px 20px;
+  width: 100%;
+  border: none;
+  border-radius: 20px;
+  background: #ffffff;
+  color: #1d89ff;
+  font-weight:bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+header .btn1:hover {
+  background: #ffdf40;
+  color: #000000;
+}
+
+header .toggle button {
   display: none;
+  background: none;
+  border: none;
+  color: #1d89ff;
+  font-size: 20px;
+  cursor: pointer;
 }
+
+header .toggle button:hover {
+  color: #ffdf40;
+}
+
+header .nav ul {
+  display: flex;
+  gap: 20px;
+}
+
+header .nav ul li a {
+  color: #000000;
+  text-transform: capitalize;
+  font-size: 16px;
+}
+
+header .nav ul li a:hover {
+  color: #1d89ff;
+  border-bottom: 2px solid #ffdf40;
+}
+
 @media screen and (max-width: 768px) {
   header {
-    padding: 0;
+    padding: 10px;
   }
-  header img {
-    margin-top: 30px;
-  }
+
   header .button {
     display: none;
   }
+
   header .nav .flex {
     display: none;
   }
-  header .toggle {
+
+  header .toggle button {
     display: block;
-    margin-top: 20px;
   }
+
   header .small {
     position: absolute;
     top: 10vh;
     left: 0;
     width: 100%;
-    background-color: #27ae60;
+    background: #ededed;
     padding: 20px;
+    z-index: 999;
+    border-radius: 0 0 10px 10px;
   }
-  header li a {
-    display: inline-block;
-    margin-bottom: 20px;
-    color: #fff;
+
+  header .small li a {
+    display: block;
+    margin-bottom: 15px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  header .small li a:hover {
+    color: #ffdf40;
   }
 }

@@ -3,18 +3,23 @@
   color: #fff;
   text-align: center;
 }
+
 .awards .heading {
   display: flex;
   flex-direction: column-reverse;
 }
+
 .awards .heading p {
-  color: #27ae60;
+  color: #1d89ff;
+  font-size: 20px;
 }
+
 .awards .heading h1 {
   color: #fff;
   font-size: 30px;
   font-weight: 400;
 }
+
 .awards .icon {
   width: 100px;
   height: 100px;
@@ -26,9 +31,51 @@
   font-size: 32px;
   color: #ffffff;
 }
+
 .awards h1 {
   font-size: 50px;
 }
+
+.awards p {
+  color: rgb(135, 135, 135);
+}
+
+.awards .content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.awards .box {
+  background-color: #1f2c4e;
+  padding: 30px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.awards .box:hover {
+  transform: translateY(-10px); /* Lifts the card */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Adds shadow on hover */
+  background-color: #2d3a5d; /* Darker blue on hover */
+}
+
+.awards .box:hover .icon {
+  background: #1d89ff; /* Change icon background color on hover */
+}
+
+.awards h1 {
+  font-size: 50px;
+  margin: 20px 0;
+}
+
 .awards p {
   color: grey;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .awards .content {
+    grid-template-columns: 1fr 1fr;
+  }
 }
