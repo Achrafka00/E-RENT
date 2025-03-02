@@ -61,11 +61,12 @@
 ###
 
 ###
- <h3>🔥 My Stats :</h3>
+<h3>🔥 My Stats :</h3>
 
-[![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Achrafka00&show_icons=true&theme=radical)](https://github.com/Achrafka00)
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=Achrafka00&show_icons=true&theme=radical" height="150" alt="GitHub Stats"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Achrafka00&layout=compact&theme=radical" height="150" alt="Top Languages"/>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Achrafka00&theme=radical" height="150" alt="GitHub Streak"/>
+</div>
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Achrafka00&layout=compact&theme=radical)](https://github.com/Achrafka00)
-
-[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=Achrafka00&theme=radical)](https://github.com/Achrafka00)
 ###
